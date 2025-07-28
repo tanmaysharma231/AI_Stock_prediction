@@ -1,0 +1,28 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "stock-analysis-api",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-stock-analysis-api",
+        "timeout_seconds": 300,
+        "memory_size": 1024,
+        "environment_variables": {
+            "TAVILY_API_KEY": "your_tavily_api_key_here"
+        }
+    },
+    "prod": {
+        "app_function": "app.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "stock-analysis-api",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-stock-analysis-api-prod",
+        "timeout_seconds": 300,
+        "memory_size": 1024,
+        "environment_variables": {
+            "TAVILY_API_KEY": "your_tavily_api_key_here"
+        }
+    }
+} 
